@@ -31,7 +31,7 @@ namespace USG.HttpQueueing
             try
             {
                 using (var stream = await blob.OpenWriteAsync())
-                    await RequestSerialization.Serialze(request, stream);
+                    await RequestSerialization.Serialize(request, stream);
 
                 await _queue.CreateIfNotExistsAsync();
                 await _queue.AddMessageAsync(new CloudQueueMessage(name));

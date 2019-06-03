@@ -24,7 +24,7 @@ namespace USG.HttpQueueing
             public byte[] Content { get; set; }
         }
 
-        public static async Task Serialze(
+        public static async Task Serialize(
             this HttpRequestMessage request,
             Stream stream)
         {

@@ -26,7 +26,7 @@ namespace USG.HttpQueueing.Tests
 
             using (var stream = new MemoryStream())
             {
-                await RequestSerialization.Serialze(input, stream);
+                await RequestSerialization.Serialize(input, stream);
                 stream.Seek(0, SeekOrigin.Begin);
                 output = await RequestSerialization.Deserialize(stream);
             }
@@ -54,7 +54,7 @@ namespace USG.HttpQueueing.Tests
 
             using (var stream = new MemoryStream())
             {
-                await RequestSerialization.Serialze(input, stream);
+                await RequestSerialization.Serialize(input, stream);
                 stream.Seek(0, SeekOrigin.Begin);
                 output = await RequestSerialization.Deserialize(stream);
             }

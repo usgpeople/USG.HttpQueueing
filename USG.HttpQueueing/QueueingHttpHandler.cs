@@ -16,7 +16,7 @@ namespace USG.HttpQueueing
 
         public QueueingHttpHandler(
                 CloudStorageAccount account,
-                string queueName = "requests",
+                string queueName = "requests-v1",
                 string blobContainerName = "payloads")
             : this(
                 account.CreateCloudQueueClient().GetQueueReference(queueName),

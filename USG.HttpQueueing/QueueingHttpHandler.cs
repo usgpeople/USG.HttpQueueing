@@ -25,7 +25,7 @@ namespace USG.HttpQueueing
             HttpRequestMessage request,
             CancellationToken cancellationToken)
         {
-            string name = $"{request.RequestUri.Host}-{Guid.NewGuid()}";
+            string name = $"{request.RequestUri.Host}-{Guid.NewGuid()}.json";
             var blob = _blobContainer.GetBlockBlobReference(name);
 
             try

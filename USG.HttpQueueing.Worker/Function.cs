@@ -7,19 +7,20 @@ using Microsoft.WindowsAzure.Storage.Blob;
 
 namespace USG.HttpQueueing.Worker
 {
-    public class Processor
+    public class Function
     {
         IHttpClientFactory _httpClientFactory;
         StorageAccountProvider _storageProvider;
 
-        public Processor(
-            IHttpClientFactory clientFactory,
+        public Function(
+            IHttpClientFactory httpClientFactory,
             StorageAccountProvider storageProvider)
         {
-            _httpClientFactory = clientFactory;
+            _httpClientFactory = httpClientFactory;
             _storageProvider = storageProvider;
         }
 
+        [FunctionName("ProcessMessage")]
         public async Task ProcessMessage(
             [QueueTrigger("requests-v1")] string message,
             ILogger logger)

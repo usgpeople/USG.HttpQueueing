@@ -29,7 +29,7 @@ HttpClient like so:
 	var httpHandler = new QueueingHttpHandler(storageAccount);
 	var httpClient = new HttpClient(httpHandler);
     
-	await httpClient.PostAsync("https://example.com/foo);
+	await httpClient.PostAsync("https://example.com/foo");
 
 A queueuing HTTP client will always return 202 Accepted. The worker will
 discard the actual responses.

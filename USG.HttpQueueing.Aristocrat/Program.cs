@@ -37,7 +37,7 @@ namespace USG.HttpQueueing.Aristocrat
                     new StringContent("Hello, World!"));
 
                 Console.WriteLine("DELETE https://httpbin.org/status/405");
-                await client.GetAsync("https://httpbin.org/status/405");
+                await client.DeleteAsync("https://httpbin.org/status/405");
             }
         }
     }

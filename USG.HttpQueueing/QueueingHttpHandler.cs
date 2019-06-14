@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Azure.Storage;
 using Microsoft.Azure.Storage.Blob;
 using Microsoft.Azure.Storage.Queue;
 
@@ -12,6 +13,16 @@ namespace USG.HttpQueueing
     {
         CloudQueue _queue;
         CloudBlobContainer _blobContainer;
+
+        public QueueingHttpHandler(
+                CloudStorageAccount account,
+                string queueName = "requests",
+                string blobContainerName = "payloads")
+            : this(
+                account.CreateCloudQueueClient().GetQueueReference(queueName),
+                account.CreateCloudBlobClient().GetContainerReference(
+                    blobContainerName))
+        { }
 
         public QueueingHttpHandler(
             CloudQueue queue,

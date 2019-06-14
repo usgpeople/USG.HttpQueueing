@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USG.HttpQueueing.Tests", "U
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USG.HttpQueueing.Worker", "USG.HttpQueueing.Worker\USG.HttpQueueing.Worker.csproj", "{596E92ED-3CB8-49D4-BDAB-0870E95637DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USG.HttpQueueing.Aristocrat", "USG.HttpQueueing.Aristocrat\USG.HttpQueueing.Aristocrat.csproj", "{12253BBA-406B-4469-B3F1-8B523A238B67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USG.HttpQueueing.Aristocrat", "USG.HttpQueueing.Aristocrat\USG.HttpQueueing.Aristocrat.csproj", "{12253BBA-406B-4469-B3F1-8B523A238B67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8D6D45CA-BC2C-45F3-8797-BEF9F42DA837}"
+	ProjectSection(SolutionItems) = preProject
+		Common.props = Common.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USG.HttpQueueing", "USG.HttpQueueing\USG.HttpQueueing.csproj", "{B912BE42-82C6-4A69-86B9-FABF0FB5D921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USG.HttpQueueing", "USG.HttpQueueing\USG.HttpQueueing.csproj", "{B912BE42-82C6-4A69-86B9-FABF0FB5D921}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USG.HttpQueueing.Tests", "USG.HttpQueueing.Tests\USG.HttpQueueing.Tests.csproj", "{7780F5A2-33CF-42E8-A1D8-A2D843EC9017}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USG.HttpQueueing.Tests", "USG.HttpQueueing.Tests\USG.HttpQueueing.Tests.csproj", "{7780F5A2-33CF-42E8-A1D8-A2D843EC9017}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USG.HttpQueueing.Worker", "USG.HttpQueueing.Worker\USG.HttpQueueing.Worker.csproj", "{596E92ED-3CB8-49D4-BDAB-0870E95637DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USG.HttpQueueing.Aristocrat", "USG.HttpQueueing.Aristocrat\USG.HttpQueueing.Aristocrat.csproj", "{12253BBA-406B-4469-B3F1-8B523A238B67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{7780F5A2-33CF-42E8-A1D8-A2D843EC9017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7780F5A2-33CF-42E8-A1D8-A2D843EC9017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7780F5A2-33CF-42E8-A1D8-A2D843EC9017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596E92ED-3CB8-49D4-BDAB-0870E95637DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596E92ED-3CB8-49D4-BDAB-0870E95637DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596E92ED-3CB8-49D4-BDAB-0870E95637DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596E92ED-3CB8-49D4-BDAB-0870E95637DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12253BBA-406B-4469-B3F1-8B523A238B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12253BBA-406B-4469-B3F1-8B523A238B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12253BBA-406B-4469-B3F1-8B523A238B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12253BBA-406B-4469-B3F1-8B523A238B67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

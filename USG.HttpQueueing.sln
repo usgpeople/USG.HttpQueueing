@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "USG.HttpQueueing.Aristocrat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8D6D45CA-BC2C-45F3-8797-BEF9F42DA837}"
 	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
 		Common.props = Common.props
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global

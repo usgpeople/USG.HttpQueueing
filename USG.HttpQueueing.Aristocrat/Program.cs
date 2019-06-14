@@ -29,14 +29,14 @@ namespace USG.HttpQueueing.Aristocrat
                 Console.WriteLine("Press any key to generate work");
                 Console.ReadKey();
 
-                Console.WriteLine("GET    https://httpbin.org/status/200");
+                Console.WriteLine("GET\thttps://httpbin.org/status/200");
                 await client.GetAsync("https://httpbin.org/status/200");
 
-                Console.WriteLine("POST   https://httpbin.org/status/201");
+                Console.WriteLine("POST\thttps://httpbin.org/status/201");
                 await client.PostAsync("https://httpbin.org/status/201",
                     new StringContent("Hello, World!"));
 
-                Console.WriteLine("DELETE https://httpbin.org/status/405");
+                Console.WriteLine("DELETE\thttps://httpbin.org/status/405");
                 await client.DeleteAsync("https://httpbin.org/status/405");
             }
         }

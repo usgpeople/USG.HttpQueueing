@@ -34,7 +34,7 @@ namespace USG.HttpQueueing
                     await RequestSerialization.Serialize(request, stream);
 
                 await _queue.CreateIfNotExistsAsync();
-                await _queue.AddMessageAsync(new CloudQueueMessage(name));
+                await _queue.AddMessageAsync(new CloudQueueMessage(blob.Uri.AbsoluteUri));
             }
             catch
             {

@@ -4,6 +4,7 @@
     <Version>1.0</Version>
     <Copyright>USG People The Netherlands B.V.</Copyright>
     <Authors>USG People The Netherlands B.V.</Authors>
+    <PackageLicenseExpression>BSD-2-Clause</PackageLicenseExpression>
     <PackageProjectUrl>https://usgpeople.visualstudio.com/USG%20Web%20Development/_git/USG.HttpQueueing</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://usgpeople.visualstudio.com/USG%20Web%20Development/_git/USG.HttpQueueing</RepositoryUrl>

@@ -58,3 +58,9 @@ Releasing
 Update *CHANGELOG.md* and *Common.props* and push to master. The build
 pipeline builds and uploads a new package and deploys the worker to the
 shared instance.
+
+Legal
+-----
+Copyright (c) 2019, USG People The Netherlands B.V. All rights reserved.
+Licensed under the 2-clause BSD license, see LICENSE.md
+

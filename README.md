@@ -31,7 +31,7 @@ HttpClient like so:
     
 	await httpClient.PostAsync("https://example.com/foo");
 
-A queueuing HTTP client will always return 202 Accepted. The worker will
+A queueing HTTP client will always return 202 Accepted. The worker will
 discard the actual responses.
 
 Local testing
@@ -40,8 +40,8 @@ Install and run Azure Storage Emulator, then run the solution. Both Worker
 and Aristocrat are started. Press the return key in Aristocrat to generate
 some work.
 
-Shared instance
----------------
+Shared instance (for USG use)
+-----------------------------
 A *usghttpqueueing* resource group with storage account and worker has been
 set up for general use. Use Azure Storage Explorer to get the connection
 string.
